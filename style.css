@@ -1,0 +1,37 @@
+body{
+    padding:20px 5%;
+}
+h1{
+    text-align:center;
+}
+
+input.blue{
+    font-weight:bolder; color:white; background:#34acc7; margin: 10px;
+}
+input.white{
+    background:white; margin:10px;
+}
+input.black{
+    background:#505050; color:white
+}
+#panelIzq{
+    width: 40%; float: left;
+    text-align:center;
+}
+#panelDrch{
+    line-height:150%; float: right; font-size: 80%; margin-bottom: 0; padding: 0 3%; width: 54%;
+}
+#hemiciclo{
+    width:360px;
+    height:300px;
+}
+
+@media screen and (max-width: 90px) {
+    #panelIzq{
+        width: 100%;
+        
+    }
+    #panelDrch{
+        width:100%;
+    }
+}

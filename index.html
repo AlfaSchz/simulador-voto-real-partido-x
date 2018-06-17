@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head> 
+<title>Derecho a voto real y permanente &#150; Partido X.</title> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta charset="UTF-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+<meta name="description" content="Los ciudadanos reclamamos el derecho a voto real de forma permanente, para poder usarlo cuando lo consideremos oportuno, recuperando la soberanía mediante voto. Sin cheques en blanco."/>  
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+</head>
+<body>
+
+<h1>Simulador de Derecho a voto real y permanente &#150; Partido X.</h1>
+<br><br>
+<div id="cuerpoSimulador" style="display:none">
+
+
+<div id="panelIzq">
+    <div id="graficos"> 
+        <div id="tutorialTipoVoto"></div>
+        <svg id="hemiciclo"></svg>
+
+        <div id="inputs" style="text-align:center; font-size:80%;">
+        <input class="white" onclick="randomVoto()" value="Votación al azar" id="voteButton" type="button">&nbsp; &nbsp;
+        <input onclick="cleanUp(), reset()" value="Limpiar" class="white" id="resetButton" type="button">
+        </div>
+        <div id="ciudadania"></div>
+    </div>
+</div>
+
+<div id="panelDrch">
+    <div id="text" style="margin: 0 auto;">
+        <div id="inputsTutorial">
+        <div style="text-align:center;padding:15px 0;">
+            <input class="blue" onclick="tutorial(-1)" value="<- Anterior" id="anterior" type="button">&nbsp; &nbsp;
+            <input onclick="tutorial(1)" value="Siguiente ->" class="blue" id="siguiente" type="button">
+        </div>
+        </div>
+        <div id="explanation"></div>
+        
+        <div style="clear:both;"></div>
+        <div id="results" style="width: 90%;"></div>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="voto-real.js"></script>
+
+</body>
+</html>
